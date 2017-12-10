@@ -8,13 +8,38 @@
       
     <div class="small-12 columns picker-container">
       <div class="medium-3 columns">
-        <input type="text" name="Origin" value="New York">
+        <input list="Origins" name="Origin" value="London" autocomplete="on">
+          <datalist id="Origins">
+            <option value="New York">
+            <option value="London">
+            <option value="New Delhi">
+            <option value="Shanghai">
+            <option value="Paris">
+            <option value="San Francisco">
+            <option value="Cape Town">
+            <option value="Mumbai">
+            <option value="Tokyo">
+          </datalist>
       </div>
       <div class="medium-3 columns">
-        <input type="text" name="Destination" value="London">
+        <input list="Destinations" name="Destination" value="New York" autocomplete="on">
+          <datalist id="Destinations">
+            <option value="New York">
+            <option value="London">
+            <option value="New Delhi">
+            <option value="Shanghai">
+            <option value="Paris">
+            <option value="San Francisco">
+            <option value="Cape Town">
+            <option value="Mumbai">
+            <option value="Tokyo">
+          </datalist>
       </div>
       <div class="medium-3 columns">
-        <input id="date" type="date" value="Date">
+        <input id="date" type="date" value="Date" min="2017-12-13" max="2018-12-13">
+      </div>
+      <div class="medium-3 columns">
+        <input type="button" onclick="alert('Take me to the results page')" value="Lift Off!">
       </div>
     </div>
     

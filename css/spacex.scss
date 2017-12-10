@@ -20,9 +20,12 @@ $bold: 700;
 
 
 .header-home{
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/header2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 200px;
   margin-bottom: 100px;
 }
 
@@ -39,6 +42,11 @@ $bold: 700;
 
 .picker-container{
   margin-top: 100px;
+}
+
+input, [type='date']{
+  height: 3em;
+  width: 100%;
 }
 
 // Foundation Overrides
