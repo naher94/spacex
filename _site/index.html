@@ -10,9 +10,9 @@
   <meta name="description" content="SpaceX the next generation of travel on and off planet
 ">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/foundation.css">
-  <link rel="stylesheet" href="/css/spacex.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/spacex.css">
   
   <link rel="canonical" href="http://localhost:4000/">
   <link rel="alternate" type="application/rss+xml" title="SpaceX" href="http://localhost:4000/feed.xml">
@@ -31,13 +31,39 @@
       
     <div class="small-12 columns picker-container">
       <div class="medium-3 columns">
-        <input type="text" name="Origin" value="New York">
+        Origin City:
+           <input list="Origins" name="Origin" autocomplete="on">
+            <datalist id="Origins">
+                <option value="New York">
+                <option value="London">
+                <option value="New Delhi">
+                <option value="Shanghai">
+                <option value="Paris">
+                <option value="San Francisco">
+                <option value="Cape Town">
+                <option value="Mumbai">
+                <option value="Tokyo">
+            </datalist>
       </div>
       <div class="medium-3 columns">
-        <input type="text" name="Destination" value="London">
+        Destination city: <input list="Destinations" name="Destination" autocomplete="on">
+            <datalist id="Destinations">
+                <option value="New York">
+                <option value="London">
+                <option value="New Delhi">
+                <option value="Shanghai">
+                <option value="Paris">
+                <option value="San Francisco">
+                <option value="Cape Town">
+                <option value="Mumbai">
+                <option value="Tokyo">
+            </datalist>
       </div>
       <div class="medium-3 columns">
-        <input id="date" type="date" value="Date">
+        Travel Date: <input id="date" type="date" value="Date" min="2017-12-13" max="2018-12-13">
+      </div>
+      <div class="medium-3 columns">
+        <input type="button" onclick="alert('Take me to the results page')" value="Lift Off!">
       </div>
     </div>
     
