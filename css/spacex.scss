@@ -6,6 +6,7 @@
 
 $x-black: #181C1F;
 $x-grey: #8B939B;
+$x-light-grey: #EEEFF0;
 $x-gold: #CCAC55;
 
 
@@ -80,12 +81,25 @@ input, [type='date']{
   }
 }
 
+.footer-buffer{
+  background-color: $x-light-grey;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 100px; 
+  
+  P{
+    font-size: 2em;
+    text-align: center;
+    color: $x-grey;
+  }
+}
+
 footer{
   background-color: $x-black;
   color: $x-grey;
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 100px;
+//  margin-top: 100px;
   
   .left{
     text-align: left;
