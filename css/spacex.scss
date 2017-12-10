@@ -35,9 +35,11 @@ $bold: 700;
   padding-bottom: 60px;
 }
 
-.logo{
-  display: block;
-  margin: 0 auto;
+header{
+  .logo{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .picker-container{
@@ -49,6 +51,26 @@ input, [type='date']{
   height: 3em;
   width: 100%;
   padding-left: 15px;
+  color: $x-grey;
+}
+
+footer{
+  background-color: $x-black;
+  color: $x-grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  .left{
+    text-align: left;
+    .logo{
+      height: 20px;
+    }
+  }
+  
+  .right{
+    text-align: right;
+  }
+  
 }
 
 // Foundation Overrides

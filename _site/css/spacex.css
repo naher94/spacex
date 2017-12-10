@@ -13,7 +13,7 @@
   padding-top: 60px;
   padding-bottom: 60px; }
 
-.logo {
+header .logo {
   display: block;
   margin: 0 auto; }
 
@@ -24,7 +24,20 @@
 input, [type='date'] {
   height: 3em;
   width: 100%;
-  padding-left: 15px; }
+  padding-left: 15px;
+  color: #8B939B; }
+
+footer {
+  background-color: #181C1F;
+  color: #8B939B;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  footer .left {
+    text-align: left; }
+    footer .left .logo {
+      height: 20px; }
+  footer .right {
+    text-align: right; }
 
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
   float: left; }
