@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
 .header-home {
-  background-image: url(../img/header2.png);
+  background-image: url(../img/header.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -27,11 +31,28 @@ input, [type='date'] {
   padding-left: 15px;
   color: #8B939B; }
 
+.destination-tile-container {
+  margin-bottom: 1.6em;
+  padding-bottom: 0.3em; }
+  .destination-tile-container h1 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+    margin-top: 0.4em;
+    padding-left: 0.4em;
+    color: #181C1F; }
+  .destination-tile-container h2 {
+    font-size: 1em;
+    color: #8B939B;
+    padding-left: 0.5em; }
+  .destination-tile-container:hover {
+    box-shadow: 0 0 15px 0 rgba(163, 163, 163, 0.5); }
+
 footer {
   background-color: #181C1F;
   color: #8B939B;
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-top: 100px; }
   footer .left {
     text-align: left; }
     footer .left .logo {
