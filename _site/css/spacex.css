@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+.header-home {
+  background-image: url(../img/header.jpg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 100px; }
+
+.header-simple {
+  background-color: #181C1F;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.logo {
+  display: block;
+  margin: 0 auto; }
+
+.picker-container {
+  margin-top: 100px; }
+
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+  float: left; }
