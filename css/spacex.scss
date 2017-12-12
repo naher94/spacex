@@ -49,6 +49,11 @@ header{
   }
 }
 
+.page-content{
+  padding: 0;
+  margin-bottom: 60px;
+}
+
 .header-home{
   background-image: url(../img/header.png);
   background-repeat: no-repeat;
@@ -133,6 +138,9 @@ input, [type='date']{
     font-size: 1.4em;
     color: $x-grey;
   }
+  hr{
+    border-bottom: 2px solid $x-grey;
+  }
 }
 
 .flight-class{
@@ -173,6 +181,15 @@ input, [type='date']{
 
 .flight-route{
   margin-bottom: 40px;
+}
+
+.flight-depart{
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.depart-class{
+  margin-left: 20px;
 }
 
 .flight-class-picker{
