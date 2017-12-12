@@ -150,6 +150,22 @@ footer {
     text-align: right; }
 
 @media screen and (max-width: 40em) {
+  .header-simple {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px; }
+
+  header .logo {
+    height: 25px; }
+
+  .departs {
+    padding-left: 20px; }
+    .departs h1 {
+      font-size: 1.8em; }
+    .departs h2 {
+      font-size: 1.2em; }
+
   .flight-time {
     padding-left: 20px;
     margin-bottom: 10px;
@@ -169,7 +185,9 @@ footer {
     border-width: 3px; }
 
   footer .left {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 20px; }
   footer .right {
     text-align: center; } }
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
