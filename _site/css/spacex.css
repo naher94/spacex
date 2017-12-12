@@ -26,7 +26,7 @@ header .logo {
   background-position: bottom;
   padding-top: 60px;
   padding-bottom: 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 120px; }
 
 .header-simple {
   background-color: #181C1F;
@@ -64,7 +64,7 @@ input, [type='date'] {
   background-color: #EEEFF0;
   padding-top: 80px;
   padding-bottom: 80px;
-  margin-top: 100px; }
+  margin-top: 80px; }
   .footer-buffer P {
     font-size: 2em;
     text-align: center;
