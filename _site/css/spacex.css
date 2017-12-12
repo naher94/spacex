@@ -80,7 +80,7 @@ input, [type='date'] {
 .flight-class {
   text-align: center;
   color: white;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   .flight-class .main-cabin, .flight-class .business-cabin, .flight-class .first-cabin {
     padding-bottom: 0.4em;
     padding-top: 0.4em; }
@@ -100,7 +100,7 @@ input, [type='date'] {
   margin-bottom: 0; }
 
 .flight-route {
-  margin-bottom: 10px; }
+  margin-bottom: 40px; }
 
 .flight-class-picker {
   text-align: center;
@@ -151,15 +151,26 @@ footer {
 
 @media screen and (max-width: 40em) {
   .flight-time {
-    margin-left: 10px;
+    padding-left: 20px;
     margin-bottom: 10px;
     margin-top: 20px; }
+
+  .flight-class {
+    margin-bottom: 10px; }
+
+  .flight-route {
+    margin-bottom: 10px; }
 
   .flight-class-picker p {
     font-size: 0.8em; }
   .flight-class-picker .dollars {
     font-size: 1.3em; }
   .flight-class-picker .main-cabin, .flight-class-picker .business-cabin, .flight-class-picker .first-cabin {
-    border-width: 3px; } }
+    border-width: 3px; }
+
+  footer .left {
+    text-align: center; }
+  footer .right {
+    text-align: center; } }
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
   float: left; }

@@ -138,7 +138,7 @@ input, [type='date']{
 .flight-class{
   text-align: center;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   
   .main-cabin, .business-cabin, .first-cabin{
     padding-bottom: 0.4em;
@@ -172,7 +172,7 @@ input, [type='date']{
 }
 
 .flight-route{
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .flight-class-picker{
@@ -258,9 +258,17 @@ footer{
 @media screen and (max-width: 40em) {
   
   .flight-time{
-    margin-left: 10px;
+    padding-left: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
+  }
+
+  .flight-class{
+    margin-bottom: 10px;
+  }
+  
+  .flight-route{
+    margin-bottom: 10px;
   }
   
   .flight-class-picker{
@@ -274,6 +282,16 @@ footer{
       border-width: 3px;
     }
   }
+  
+  footer{
+    .left{
+      text-align: center;
+    }
+    .right{
+      text-align: center;
+    }
+  }
+  
 }
 
 // Tablet Styling
