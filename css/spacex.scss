@@ -32,6 +32,16 @@ html,body,h1,h2,h3,h4,h5,h6{
   font-weight: $regular;
 }
 
+::-moz-selection {
+  color: $x-light-grey;
+  background: $x-black;
+}
+
+::selection {
+  color: $x-light-grey;
+  background: $x-black;
+} 
+
 header{
   .logo{
     display: block;
@@ -133,8 +143,6 @@ input, [type='date']{
   .main-cabin, .business-cabin, .first-cabin{
     padding-bottom: 0.4em;
     padding-top: 0.4em;
-//    margin-left: 0.2em;
-//    margin-right: 0.2em;
   }
   
   .main-cabin{
@@ -152,6 +160,9 @@ input, [type='date']{
   
   .time{
     font-size: 1.6em;
+    .pm{
+      font-size: 0.7em;
+    }
   }
   p{
     color: $x-grey;
@@ -160,14 +171,21 @@ input, [type='date']{
   
 }
 
+.flight-route{
+  margin-bottom: 10px;
+}
 
 .flight-class-picker{
   
   text-align: center;
   color: $x-grey;
   
+  a{
+    text-decoration: none;
+    color: $x-grey;
+  }
+  
   .main-cabin, .business-cabin, .first-cabin{
-//    margin: 0.3em;
     padding-top: 1.2em;
     padding-bottom: 1.2em; 
     
@@ -233,6 +251,33 @@ footer{
   .right{
     text-align: right;
   }
+  
+}
+
+// Mobile Styling
+@media screen and (max-width: 40em) {
+  
+  .flight-time{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .flight-class-picker{
+    p{
+      font-size: 0.8em;
+    }
+    .dollars{
+      font-size: 1.3em;
+    }
+    .main-cabin, .business-cabin, .first-cabin{
+      border-width: 3px;
+    }
+  }
+}
+
+// Tablet Styling
+@media screen and (max-width: 64em) {
   
 }
 
