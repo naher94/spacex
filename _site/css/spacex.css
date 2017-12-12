@@ -71,7 +71,8 @@ input, [type='date'] {
 
 .flight-class {
   text-align: center;
-  color: white; }
+  color: white;
+  margin-bottom: 20px; }
   .flight-class .main-cabin, .flight-class .business-cabin, .flight-class .first-cabin {
     padding-bottom: 0.4em;
     padding-top: 0.4em; }
