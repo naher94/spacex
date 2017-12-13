@@ -30,6 +30,7 @@ $bold: 700;
 html,body,h1,h2,h3,h4,h5,h6{
   font-family: $x-font;
   font-weight: $regular;
+  color: $x-black;
 }
 
 ::-moz-selection {
@@ -46,6 +47,13 @@ header{
   .logo{
     display: block;
     margin: 0 auto;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
   }
 }
 
@@ -247,6 +255,38 @@ input, [type='date']{
       background-color: $first-cabin;
     }
   }
+}
+
+// Summary Page
+
+.member-login-button, .guest-login-button{
+  padding: 20px;
+  text-align: center;
+  color: $x-light-grey;
+  p{
+    margin-bottom: 0;
+    font-weight: $bold;
+  }
+}
+
+.member-login-button{
+  background-color: $x-black;
+  
+  &:hover{
+    background-color: lighten($x-black,20%);
+  }
+}
+
+.guest-login-button{
+  background-color: $x-grey;
+  
+  &:hover{
+    background-color: lighten($x-grey,10%);
+  }
+}
+
+.summary{
+  margin-bottom: 40px;
 }
 
 // Footer
