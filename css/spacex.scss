@@ -96,6 +96,21 @@ input, [type='date']{
   color: $x-grey;
 }
 
+.lift-off{
+  background-color: $x-gold;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  text-align: center;
+  color: white;
+  font-weight: $bold;
+  p{
+    margin-bottom: 0;
+  }
+  &:hover{
+    background-color: lighten($x-gold,10%);
+  }
+}
+
 .destination-tile-container{
   margin-bottom: 1.6em;
   padding-bottom: 0.3em;
@@ -376,6 +391,10 @@ footer{
     padding-left: 30px;
   }
   
+  .header-home{
+    background-size: auto 100%;
+  }
+  
   .page-content{
     padding: 0;
     padding-left: 10px;
@@ -386,6 +405,7 @@ footer{
   header{
     .logo{
       height: 25px;
+      padding-left: 30px;
     }
   }
   
