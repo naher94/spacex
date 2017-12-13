@@ -100,7 +100,8 @@ hr {
 .flight-class {
   text-align: center;
   color: white;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: 40px; }
   .flight-class .main-cabin, .flight-class .business-cabin, .flight-class .first-cabin {
     padding-bottom: 0.4em;
     padding-top: 0.4em; }
@@ -236,6 +237,13 @@ footer {
 
   header .logo {
     height: 25px; }
+
+  .price {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px; }
+    .price h1 {
+      font-size: 2em; }
 
   .departs {
     padding-left: 20px;
