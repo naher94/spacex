@@ -10,6 +10,19 @@
   <meta name="description" content="SpaceX the next generation of travel on and off planet
 ">
 
+  <link rel="icon" type="image/png" href="../img/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+  <link rel="apple-touch-icon" type="image/png" href="../img/favicon.png"/>
+  <link rel="apple-touch-icon" type="image/png" href="../img/favicon.png" sizes="76x76"/>
+  <link rel="apple-touch-icon" type="image/png" href="../img/favicon.png" sizes="120x120"/>
+  <link rel="apple-touch-icon" type="image/png" href="../img/favicon.png" sizes="152x152"/>
+  
+  <meta name="keywords" content="space,travel,transit,speedy,air travel,rockets,BFR">
+  <meta name="author" content="SpaceX">
+  
+  <meta property="og:title" content="SpaceX" />
+  <meta property="og:image" content="http://localhost:4000/img/" />
+  
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/foundation.css">
   <link rel="stylesheet" href="/css/spacex.css">
@@ -26,18 +39,45 @@
   <div class="row">
     
     <div class="small-12 columns">
-      <a href="/"><img class="logo" src="../img/logo.svg"></a>
+      <a href="/"><img class="logo" src="../img/logo.svg" alt="SpaceX Logo"></a>
     </div>
       
     <div class="small-12 columns picker-container">
       <div class="medium-3 columns">
-        <input type="text" name="Origin" value="New York">
+        <input list="Origins" name="Origin" placeholder="London" autocomplete="on">
+          <datalist id="Origins">
+            <option value="New York">
+            <option value="London">
+            <option value="New Delhi">
+            <option value="Shanghai">
+            <option value="Paris">
+            <option value="San Francisco">
+            <option value="Cape Town">
+            <option value="Mumbai">
+            <option value="Tokyo">
+            <option value="Singapore">
+          </datalist>
       </div>
       <div class="medium-3 columns">
-        <input type="text" name="Destination" value="London">
+        <input list="Destinations" name="Destination" placeholder="New York" autocomplete="on">
+          <datalist id="Destinations">
+            <option value="New York">
+            <option value="London">
+            <option value="New Delhi">
+            <option value="Shanghai">
+            <option value="Paris">
+            <option value="San Francisco">
+            <option value="Cape Town">
+            <option value="Mumbai">
+            <option value="Tokyo">
+            <option value="Singapore">
+          </datalist>
       </div>
       <div class="medium-3 columns">
-        <input id="date" type="date" value="Date">
+        <input id="date" type="date" placeholder="Date" min="2017-12-13" max="2018-12-13">
+      </div>
+      <div class="medium-3 columns">
+        <input type="button" onclick="alert('Take me to the results page')" value="Lift Off!">
       </div>
     </div>
     
@@ -45,54 +85,90 @@
   
 </header>
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="home">
-
-<!--
-  <ul class="post-list">
-    
+    <div class="row">
+      <div class="small-12 large-9 large-centered">
   
-      <li>
-        <span class="post-meta">Feb 22, 2016</span>
+  <a href="/nysh">
+    <div class="medium-4 columns">
+      <div class="destination-tile-container">
+        <img src="img/london.png" alt="London Trip">
+        <h1>London</h1>
+        <h2>Hong Kong to London</h2>
+      </div>
+    </div>
+  </a>
+  
+  <a href="/nysh">
+    <div class="medium-4 columns">
+      <div class="destination-tile-container">
+        <img src="img/singapore.png" alt="Singapore Trip">
+        <h1>Singapore</h1>
+        <h2>Los Angeles to Singapore</h2>
+      </div>
+    </div>
+  </a>
 
-        <h2>
-          <a class="post-link" href="/jekyll/update/2016/02/22/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
--->
+  <a href="/nysh">
+    <div class="medium-4 columns">
+      <div class="destination-tile-container">
+        <img src="img/shanghai.png" alt="Shanghai Trip">
+        <h1>Shanghai</h1>
+        <h2>New York to Shanghai</h2>
+      </div>
+    </div>
+  </a>
 
+  <a href="/nysh">
+    <div class="medium-4 columns">
+      <div class="destination-tile-container">
+        <img src="img/newyork.png" alt="New York Trip">
+        <h1>New York</h1>
+        <h2>Cape Town to New York</h2>
+      </div>
+    </div>
+  </a>
+
+  <a href="/nysh">
+    <div class="medium-4 columns">
+      <div class="destination-tile-container">
+        <img src="img/paris.png" alt="Paris Trip">
+        <h1>Paris</h1>
+        <h2>Paris to San Francisco</h2>
+      </div>
+    </div>
+  </a>
+
+  <a href="/nysh">
+    <div class="medium-4 columns">
+      <div class="destination-tile-container">
+        <img src="img/tokyo.png" alt="Tokyo Trip">
+        <h1>Tokyo</h1>
+        <h2>Mumbai to Tokyo</h2>
+      </div>
+    </div>
+  </a>
+  
 </div>
-
-      </div>
     </div>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">SpaceX</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>SpaceX</li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>SpaceX the next generation of travel on and off planet
-</p>
-      </div>
+    
+    <div class="footer-buffer">
+  <div class="row">  
+    <div class="small-12 medium-5 medium-centered">
+      <p>Getting you where you need to be faster than ever before</p>
     </div>
-
   </div>
-
+</div>
+    <footer>
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="left small-12 medium-6 columns">
+        <a href="/index"><img class="logo" src="../img/logo.svg" alt="SpaceX Logo"></a>
+      </div>
+      <div class="right small-12 medium-6 columns">
+        © 2017 SPACE EXPLORATION TECHNOLOGIES CORP.
+      </div>
+    </div>
+  </div>
 </footer>
 
 

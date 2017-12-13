@@ -1,21 +1,280 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #181C1F; }
+
+::-moz-selection {
+  color: #EEEFF0;
+  background: #181C1F; }
+
+::selection {
+  color: #EEEFF0;
+  background: #181C1F; }
+
+header .logo {
+  display: block;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.page-content {
+  padding: 0;
+  margin-bottom: 60px; }
+
 .header-home {
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
   padding-top: 60px;
-  padding-bottom: 60px;
-  margin-bottom: 100px; }
+  padding-bottom: 100px;
+  margin-bottom: 120px; }
 
 .header-simple {
   background-color: #181C1F;
   padding-top: 60px;
-  padding-bottom: 60px; }
-
-.logo {
-  display: block;
-  margin: 0 auto; }
+  padding-bottom: 60px;
+  margin-bottom: 60px; }
 
 .picker-container {
-  margin-top: 100px; }
+  margin-top: 160px;
+  margin-bottom: 100px; }
 
+input, [type='date'] {
+  height: 3em;
+  width: 100%;
+  padding-left: 15px;
+  color: #8B939B; }
+
+.destination-tile-container {
+  margin-bottom: 1.6em;
+  padding-bottom: 0.3em; }
+  .destination-tile-container h1 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+    margin-top: 0.4em;
+    padding-left: 0.4em;
+    color: #181C1F; }
+  .destination-tile-container h2 {
+    font-size: 1em;
+    color: #8B939B;
+    padding-left: 0.5em; }
+  .destination-tile-container:hover {
+    box-shadow: 0 0 15px 0 rgba(163, 163, 163, 0.5); }
+
+.footer-buffer {
+  background-color: #EEEFF0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 80px; }
+  .footer-buffer P {
+    font-size: 2em;
+    text-align: center;
+    color: #8B939B; }
+
+.departs .green {
+  color: #55a855; }
+.departs h1 {
+  font-size: 2.2em;
+  margin-bottom: 0; }
+.departs h2 {
+  font-size: 1.4em;
+  color: #8B939B; }
+
+hr {
+  border-bottom: 2px solid #8B939B;
+  margin-bottom: 60px; }
+
+.departs-spacer {
+  margin-bottom: 60px; }
+
+.flight-class {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px; }
+  .flight-class .main-cabin, .flight-class .business-cabin, .flight-class .first-cabin {
+    padding-bottom: 0.4em;
+    padding-top: 0.4em; }
+  .flight-class .main-cabin {
+    background-color: #b2c8d7; }
+  .flight-class .business-cabin {
+    background-color: #7d8c96; }
+  .flight-class .first-cabin {
+    background-color: #475158; }
+
+.flight-time {
+  padding-left: 0;
+  padding-right: 0; }
+  .flight-time .time {
+    font-size: 1.6em; }
+    .flight-time .time .pm {
+      font-size: 0.7em; }
+  .flight-time p {
+    color: #8B939B;
+    margin-bottom: 0; }
+
+.flight-route {
+  margin-bottom: 40px; }
+
+.flight-depart {
+  margin-top: 30px;
+  margin-bottom: 80px; }
+
+.depart-class, .seat {
+  margin-left: 20px; }
+
+.flight-class-picker {
+  text-align: center;
+  color: #8B939B; }
+  .flight-class-picker a {
+    text-decoration: none;
+    color: #8B939B; }
+  .flight-class-picker .main-cabin, .flight-class-picker .business-cabin, .flight-class-picker .first-cabin {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em; }
+    .flight-class-picker .main-cabin:hover, .flight-class-picker .business-cabin:hover, .flight-class-picker .first-cabin:hover {
+      color: white; }
+  .flight-class-picker p {
+    margin-bottom: 0; }
+  .flight-class-picker .dollars {
+    font-size: 2em;
+    margin-top: -0.3em; }
+  .flight-class-picker .main-cabin {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #b2c8d7; }
+    .flight-class-picker .main-cabin:hover {
+      background-color: #b2c8d7; }
+  .flight-class-picker .business-cabin {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #7d8c96; }
+    .flight-class-picker .business-cabin:hover {
+      background-color: #7d8c96; }
+  .flight-class-picker .first-cabin {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #475158; }
+    .flight-class-picker .first-cabin:hover {
+      background-color: #475158; }
+
+.member-login-button, .guest-login-button {
+  padding: 20px;
+  text-align: center;
+  color: #EEEFF0; }
+  .member-login-button p, .guest-login-button p {
+    margin-bottom: 0;
+    font-weight: 700; }
+
+.member-login-button {
+  background-color: #CCAC55; }
+  .member-login-button:hover {
+    background-color: #d8bf7c; }
+
+.guest-login-button {
+  background-color: #8B939B; }
+  .guest-login-button:hover {
+    background-color: #a6adb3; }
+
+.page-title {
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.page-subtitle {
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.summary-buttons {
+  margin-top: 80px; }
+
+label {
+  font-size: 1em; }
+
+[type=""] {
+  height: 2.4375rem; }
+
+select {
+  color: #bababa; }
+
+.info-section {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.dollar-sign {
+  font-size: 0.7em; }
+
+footer {
+  background-color: #181C1F;
+  color: #8B939B;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  footer .left {
+    text-align: left; }
+    footer .left .logo {
+      height: 20px; }
+  footer .right {
+    text-align: right; }
+
+@media screen and (max-width: 40em) {
+  .header-simple {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px; }
+
+  header .logo {
+    height: 25px; }
+
+  .departs {
+    padding-left: 20px;
+    padding-right: 20px; }
+    .departs h1 {
+      font-size: 1.8em; }
+    .departs h2 {
+      font-size: 1.2em; }
+
+  .flight-depart {
+    margin: 0; }
+
+  .flight-time {
+    margin-bottom: 10px;
+    margin-top: 20px; }
+    .flight-time .class-seat {
+      display: block; }
+    .flight-time .depart-class {
+      margin-left: 0; }
+
+  .flight-class {
+    margin-bottom: 10px; }
+
+  .flight-route {
+    margin-bottom: 10px; }
+
+  .flight-class-picker p {
+    font-size: 0.8em; }
+  .flight-class-picker .dollars {
+    font-size: 1.3em; }
+  .flight-class-picker .main-cabin, .flight-class-picker .business-cabin, .flight-class-picker .first-cabin {
+    border-width: 3px; }
+
+  .page-content {
+    margin-bottom: 30px; }
+
+  .map {
+    margin-bottom: 30px; }
+
+  footer .left {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 20px; }
+  footer .right {
+    text-align: center; } }
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
   float: left; }

@@ -7,12 +7,11 @@
 
     {% include header-home.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="row">
+      {{ content }}
     </div>
-
+    
+    {% include footer-buffer.html %}
     {% include footer.html %}
 
   </body>

@@ -4,12 +4,20 @@
 
 // Variables
 
+//// Colors 
+
 $x-black: #181C1F;
 $x-grey: #8B939B;
+$x-light-grey: #EEEFF0;
 $x-gold: #CCAC55;
+$x-green: #55a855;
+
+$main-cabin: #b2c8d7;
+$business-cabin: #7d8c96;
+$first-cabin: #475158;
 
 
-// Fonts
+//// Fonts
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
@@ -19,26 +27,420 @@ $bold: 700;
 
 
 
+html,body,h1,h2,h3,h4,h5,h6{
+  font-family: $x-font;
+  font-weight: $regular;
+  color: $x-black;
+//  overflow-x: hidden;
+}
+
+::-moz-selection {
+  color: $x-light-grey;
+  background: $x-black;
+}
+
+::selection {
+  color: $x-light-grey;
+  background: $x-black;
+} 
+
+header{
+  .logo{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.page-content{
+  padding: 0;
+  margin-bottom: 60px;
+}
+
 .header-home{
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
   padding-top: 60px;
-  padding-bottom: 60px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .header-simple{
   background-color: $x-black;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
-.logo{
-  display: block;
-  margin: 0 auto;
-}
+// Home Page 
 
 .picker-container{
-  margin-top: 100px;
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+input, [type='date']{
+  height: 3em;
+  width: 100%;
+  padding-left: 15px;
+  color: $x-grey;
+}
+
+.destination-tile-container{
+  margin-bottom: 1.6em;
+  padding-bottom: 0.3em;
+  
+  h1{
+    font-size: 1.6em;
+    margin-bottom: 0;
+    margin-top: 0.4em;
+    padding-left: 0.4em;
+    color: $x-black;
+  }
+  
+  h2{
+    font-size: 1em;
+    color: $x-grey;
+    padding-left: 0.5em;
+  }
+  
+  &:hover{
+	box-shadow: 0 0 15px 0 rgba(163, 163, 163, 0.5);
+  }
+}
+
+.footer-buffer{
+  background-color: $x-light-grey;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 80px; 
+  
+  P{
+    font-size: 2em;
+    text-align: center;
+    color: $x-grey;
+  }
+}
+
+// Flight Selector
+
+.departs{
+  
+//  margin-bottom: 60px;
+  
+  .green{
+    color: $x-green;
+  }
+  h1{
+    font-size: 2.2em;
+    margin-bottom: 0;
+  }
+  h2{
+    font-size: 1.4em;
+    color: $x-grey;
+  }
+}
+
+hr{
+  border-bottom: 2px solid $x-grey;
+  margin-bottom: 60px;
+}
+
+.departs-spacer{
+  margin-bottom: 60px;
+}
+
+.flight-class{
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  
+  .main-cabin, .business-cabin, .first-cabin{
+    padding-bottom: 0.4em;
+    padding-top: 0.4em;
+  }
+  
+  .main-cabin{
+    background-color: $main-cabin;
+  }
+  .business-cabin{
+    background-color: $business-cabin;
+  }
+  .first-cabin{
+    background-color: $first-cabin;
+  }
+}
+
+.flight-time{
+  
+  padding-left: 0;
+  padding-right: 0;
+  
+  .time{
+    font-size: 1.6em;
+    .pm{
+      font-size: 0.7em;
+    }
+  }
+  p{
+    color: $x-grey;
+    margin-bottom: 0;
+  }
+  
+}
+
+.flight-route{
+  margin-bottom: 40px;
+}
+
+.flight-depart{
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.depart-class, .seat{
+  margin-left: 20px;
+}
+
+.flight-class-picker{
+  
+  text-align: center;
+  color: $x-grey;
+  
+  a{
+    text-decoration: none;
+    color: $x-grey;
+  }
+  
+  .main-cabin, .business-cabin, .first-cabin{
+    padding-top: 1.2em;
+    padding-bottom: 1.2em; 
+    
+    &:hover{
+      color: white;
+    }
+  }
+  
+  p{
+    margin-bottom: 0;
+  }
+  
+  .dollars{
+    font-size: 2em;
+    margin-top: -0.3em;
+  }
+  
+  .main-cabin{
+    border-style: solid;
+    border-width: 5px;
+    border-color: $main-cabin;
+    
+    &:hover{
+      background-color: $main-cabin;
+    }
+  }
+  .business-cabin{
+    border-style: solid;
+    border-width: 5px;
+    border-color: $business-cabin;
+    
+    &:hover{
+      background-color: $business-cabin;
+    }
+  }
+  .first-cabin{
+    border-style: solid;
+    border-width: 5px;
+    border-color: $first-cabin;
+    
+    &:hover{
+      background-color: $first-cabin;
+    }
+  }
+}
+
+// Summary Page
+
+.member-login-button, .guest-login-button{
+  padding: 20px;
+  text-align: center;
+  color: $x-light-grey;
+  p{
+    margin-bottom: 0;
+    font-weight: $bold;
+  }
+}
+
+.member-login-button{
+  background-color: $x-gold;
+  
+  &:hover{
+    background-color: lighten($x-gold,10%);
+  }
+}
+
+.guest-login-button{
+  background-color: $x-grey;
+  
+  &:hover{
+    background-color: lighten($x-grey,10%);
+  }
+}
+
+.page-title{
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-subtitle{
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.summary-buttons{
+  margin-top: 80px;
+}
+
+label{
+  font-size: 1em;
+}
+
+[type=""]{
+  height: 2.4375rem;
+}
+
+select{
+  color: #bababa;
+}
+
+.info-section{
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dollar-sign{
+  font-size: 0.7em;
+}
+
+// Footer
+
+footer{
+  background-color: $x-black;
+  color: $x-grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+//  margin-top: 100px;
+  
+  .left{
+    text-align: left;
+    .logo{
+      height: 20px;
+    }
+  }
+  
+  .right{
+    text-align: right;
+  }
+  
+}
+
+// Mobile Styling
+@media screen and (max-width: 40em) {
+  
+  .header-simple{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+  }
+  
+  header{
+    .logo{
+      height: 25px;
+    }
+  }
+  
+  .departs{
+    padding-left: 20px;
+    padding-right: 20px;
+    h1{
+      font-size: 1.8em;
+    }
+    h2{
+      font-size: 1.2em;
+    }
+  }
+  
+  .flight-depart{
+    margin: 0;
+  }
+  
+  .flight-time{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    .class-seat{
+      display: block;
+    }
+    .depart-class{
+      margin-left: 0;
+    }
+  }
+
+  .flight-class{
+    margin-bottom: 10px;
+  }
+  
+  .flight-route{
+    margin-bottom: 10px;
+  }
+  
+  .flight-class-picker{
+    p{
+      font-size: 0.8em;
+    }
+    .dollars{
+      font-size: 1.3em;
+    }
+    .main-cabin, .business-cabin, .first-cabin{
+      border-width: 3px;
+    }
+  }
+  
+  .page-content{
+    margin-bottom: 30px;
+  }
+  
+  .map{
+    margin-bottom: 30px;
+  }
+  
+  footer{
+    .left{
+      text-align: center;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+    .right{
+      text-align: center;
+    }
+  }
+  
+}
+
+// Tablet Styling
+@media screen and (max-width: 64em) {
+  
 }
 
 // Foundation Overrides
