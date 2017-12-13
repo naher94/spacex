@@ -114,6 +114,13 @@ input, [type='date']{
   
   &:hover{
 	box-shadow: 0 0 15px 0 rgba(163, 163, 163, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-out;
+    
+    img{
+      opacity: 0.7;
+      transition: opacity .5s ease-out;
+    }
   }
 }
 

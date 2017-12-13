@@ -64,7 +64,12 @@ input, [type='date'] {
     color: #8B939B;
     padding-left: 0.5em; }
   .destination-tile-container:hover {
-    box-shadow: 0 0 15px 0 rgba(163, 163, 163, 0.5); }
+    box-shadow: 0 0 15px 0 rgba(163, 163, 163, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-out; }
+    .destination-tile-container:hover img {
+      opacity: 0.7;
+      transition: opacity .5s ease-out; }
 
 .footer-buffer {
   background-color: #EEEFF0;
