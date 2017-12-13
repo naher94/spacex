@@ -52,6 +52,18 @@ input, [type='date'] {
   padding-left: 15px;
   color: #8B939B; }
 
+.lift-off {
+  background-color: #CCAC55;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  text-align: center;
+  color: white;
+  font-weight: 700; }
+  .lift-off p {
+    margin-bottom: 0; }
+  .lift-off:hover {
+    background-color: #d8bf7c; }
+
 .destination-tile-container {
   margin-bottom: 1.6em;
   padding-bottom: 0.3em; }
