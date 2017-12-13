@@ -270,10 +270,10 @@ input, [type='date']{
 }
 
 .member-login-button{
-  background-color: $x-black;
+  background-color: $x-gold;
   
   &:hover{
-    background-color: lighten($x-black,20%);
+    background-color: lighten($x-gold,10%);
   }
 }
 
@@ -285,8 +285,16 @@ input, [type='date']{
   }
 }
 
-.summary{
+.page-title{
   margin-bottom: 40px;
+}
+
+label{
+  font-size: 1em;
+}
+
+[type=""]{
+  height: 2.4375rem;
 }
 
 // Footer

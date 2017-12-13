@@ -165,17 +165,23 @@ input, [type='date'] {
     font-weight: 700; }
 
 .member-login-button {
-  background-color: #181C1F; }
+  background-color: #CCAC55; }
   .member-login-button:hover {
-    background-color: #455058; }
+    background-color: #d8bf7c; }
 
 .guest-login-button {
   background-color: #8B939B; }
   .guest-login-button:hover {
     background-color: #a6adb3; }
 
-.summary {
+.page-title {
   margin-bottom: 40px; }
+
+label {
+  font-size: 1em; }
+
+[type=""] {
+  height: 2.4375rem; }
 
 footer {
   background-color: #181C1F;
