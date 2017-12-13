@@ -76,18 +76,21 @@ input, [type='date'] {
     text-align: center;
     color: #8B939B; }
 
-.departs {
+.departs .green {
+  color: #55a855; }
+.departs h1 {
+  font-size: 2.2em;
+  margin-bottom: 0; }
+.departs h2 {
+  font-size: 1.4em;
+  color: #8B939B; }
+
+hr {
+  border-bottom: 2px solid #8B939B;
   margin-bottom: 60px; }
-  .departs .green {
-    color: #55a855; }
-  .departs h1 {
-    font-size: 2.2em;
-    margin-bottom: 0; }
-  .departs h2 {
-    font-size: 1.4em;
-    color: #8B939B; }
-  .departs hr {
-    border-bottom: 2px solid #8B939B; }
+
+.departs-spacer {
+  margin-bottom: 60px; }
 
 .flight-class {
   text-align: center;
@@ -103,13 +106,16 @@ input, [type='date'] {
   .flight-class .first-cabin {
     background-color: #475158; }
 
-.flight-time .time {
-  font-size: 1.6em; }
-  .flight-time .time .pm {
-    font-size: 0.7em; }
-.flight-time p {
-  color: #8B939B;
-  margin-bottom: 0; }
+.flight-time {
+  padding-left: 0;
+  padding-right: 0; }
+  .flight-time .time {
+    font-size: 1.6em; }
+    .flight-time .time .pm {
+      font-size: 0.7em; }
+  .flight-time p {
+    color: #8B939B;
+    margin-bottom: 0; }
 
 .flight-route {
   margin-bottom: 40px; }
@@ -184,6 +190,9 @@ input, [type='date'] {
   padding-left: 10px;
   padding-right: 10px; }
 
+.summary-buttons {
+  margin-top: 80px; }
+
 label {
   font-size: 1em; }
 
@@ -232,12 +241,15 @@ footer {
       font-size: 1.2em; }
 
   .flight-depart {
-    margin-bottom: 20px; }
+    margin: 0; }
 
   .flight-time {
-    padding-left: 20px;
     margin-bottom: 10px;
     margin-top: 20px; }
+    .flight-time .class-seat {
+      display: block; }
+    .flight-time .depart-class {
+      margin-left: 0; }
 
   .flight-class {
     margin-bottom: 10px; }
@@ -251,6 +263,12 @@ footer {
     font-size: 1.3em; }
   .flight-class-picker .main-cabin, .flight-class-picker .business-cabin, .flight-class-picker .first-cabin {
     border-width: 3px; }
+
+  .page-content {
+    margin-bottom: 30px; }
+
+  .map {
+    margin-bottom: 30px; }
 
   footer .left {
     text-align: center;

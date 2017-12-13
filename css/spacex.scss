@@ -31,6 +31,7 @@ html,body,h1,h2,h3,h4,h5,h6{
   font-family: $x-font;
   font-weight: $regular;
   color: $x-black;
+//  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -133,7 +134,7 @@ input, [type='date']{
 
 .departs{
   
-  margin-bottom: 60px;
+//  margin-bottom: 60px;
   
   .green{
     color: $x-green;
@@ -146,9 +147,15 @@ input, [type='date']{
     font-size: 1.4em;
     color: $x-grey;
   }
-  hr{
-    border-bottom: 2px solid $x-grey;
-  }
+}
+
+hr{
+  border-bottom: 2px solid $x-grey;
+  margin-bottom: 60px;
+}
+
+.departs-spacer{
+  margin-bottom: 60px;
 }
 
 .flight-class{
@@ -173,6 +180,9 @@ input, [type='date']{
 }
 
 .flight-time{
+  
+  padding-left: 0;
+  padding-right: 0;
   
   .time{
     font-size: 1.6em;
@@ -297,6 +307,10 @@ input, [type='date']{
   padding-right: 10px;
 }
 
+.summary-buttons{
+  margin-top: 80px;
+}
+
 label{
   font-size: 1em;
 }
@@ -369,13 +383,18 @@ footer{
   }
   
   .flight-depart{
-    margin-bottom: 20px;
+    margin: 0;
   }
   
   .flight-time{
-    padding-left: 20px;
     margin-bottom: 10px;
     margin-top: 20px;
+    .class-seat{
+      display: block;
+    }
+    .depart-class{
+      margin-left: 0;
+    }
   }
 
   .flight-class{
@@ -396,6 +415,14 @@ footer{
     .main-cabin, .business-cabin, .first-cabin{
       border-width: 3px;
     }
+  }
+  
+  .page-content{
+    margin-bottom: 30px;
+  }
+  
+  .map{
+    margin-bottom: 30px;
   }
   
   footer{
