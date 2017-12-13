@@ -289,12 +289,28 @@ input, [type='date']{
   margin-bottom: 40px;
 }
 
+.page-subtitle{
+  font-size: 1.5em;
+}
+
 label{
   font-size: 1em;
 }
 
 [type=""]{
   height: 2.4375rem;
+}
+
+select{
+  color: #bababa;
+}
+
+.info-section{
+  margin-bottom: 30px;
+}
+
+.dollar-sign{
+  font-size: 0.7em;
 }
 
 // Footer
