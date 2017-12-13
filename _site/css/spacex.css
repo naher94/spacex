@@ -197,7 +197,9 @@ hr {
   padding-right: 10px; }
 
 .summary-buttons {
-  margin-top: 80px; }
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 label {
   font-size: 1em; }
