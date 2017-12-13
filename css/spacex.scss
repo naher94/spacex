@@ -287,10 +287,14 @@ input, [type='date']{
 
 .page-title{
   margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .page-subtitle{
   font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 label{
@@ -307,6 +311,8 @@ select{
 
 .info-section{
   margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .dollar-sign{
@@ -353,12 +359,17 @@ footer{
   
   .departs{
     padding-left: 20px;
+    padding-right: 20px;
     h1{
       font-size: 1.8em;
     }
     h2{
       font-size: 1.2em;
     }
+  }
+  
+  .flight-depart{
+    margin-bottom: 20px;
   }
   
   .flight-time{

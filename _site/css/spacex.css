@@ -175,10 +175,14 @@ input, [type='date'] {
     background-color: #a6adb3; }
 
 .page-title {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .page-subtitle {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 label {
   font-size: 1em; }
@@ -190,7 +194,9 @@ select {
   color: #bababa; }
 
 .info-section {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .dollar-sign {
   font-size: 0.7em; }
@@ -218,11 +224,15 @@ footer {
     height: 25px; }
 
   .departs {
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-right: 20px; }
     .departs h1 {
       font-size: 1.8em; }
     .departs h2 {
       font-size: 1.2em; }
+
+  .flight-depart {
+    margin-bottom: 20px; }
 
   .flight-time {
     padding-left: 20px;
