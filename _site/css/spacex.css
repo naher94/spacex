@@ -251,6 +251,9 @@ footer {
     margin-bottom: 30px;
     padding-left: 30px; }
 
+  .header-home {
+    background-size: auto 100%; }
+
   .page-content {
     padding: 0;
     padding-left: 10px;
@@ -258,7 +261,8 @@ footer {
     margin-bottom: 60px; }
 
   header .logo {
-    height: 25px; }
+    height: 25px;
+    padding-left: 30px; }
 
   .price {
     padding-left: 10px;
