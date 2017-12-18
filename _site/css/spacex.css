@@ -90,10 +90,12 @@ input, [type='date'] {
   padding-top: 80px;
   padding-bottom: 80px;
   margin-top: 80px; }
-  .footer-buffer P {
+  .footer-buffer p {
     font-size: 2em;
     text-align: center;
-    color: #8B939B; }
+    color: #8B939B;
+    padding-left: 10px;
+    padding-right: 10px; }
 
 .departs .green {
   color: #55a855; }

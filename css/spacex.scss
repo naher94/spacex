@@ -148,10 +148,12 @@ input, [type='date']{
   padding-bottom: 80px;
   margin-top: 80px; 
   
-  P{
+  p{
     font-size: 2em;
     text-align: center;
     color: $x-grey;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
